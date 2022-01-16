@@ -7,8 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-const item = document.createElement('ul')
-item.classList.add('ingredients')
+const item= document.querySelector('#ingredients')
 
 const elements = ingredients.map(
 option => {
