@@ -18,4 +18,3 @@ const elements = ingredients.map(option => {
 )
 const item= document.querySelector('#ingredients');
 item.append(...elements)
-console.log(item)
