@@ -4,18 +4,21 @@ function getRandomHexColor() {
 
 const buttonCreate = document.querySelector("[data-create]")
 const buttonDestroy = document.querySelector("[data-destroy]")
-const divBox = document.querySelector("#boxes")
-const addBox = document.createElement('div')
+const input = document.querySelector("input")
 
-buttonDestroy.addEventListener("click", ()=> {
-  console.log(buttonDestroy.textContent)
-  addBox.remove()
-})
+
+const divBox = document.querySelector("#boxes")
+
+
 
 buttonCreate.addEventListener("click", ()=> {
-  console.log(buttonCreate.textContent)
-  const addBox = document.createElement('div')
-
-divBox.append(addBox)
+ input.addEventListener("blur", ()=> {
+    for (let index = 0; index <= input.value; index++) {
+      const addElement= document.createElement('div')
+      divBox.append(addElement)
+    }
+  })
+  
 })
+
 
