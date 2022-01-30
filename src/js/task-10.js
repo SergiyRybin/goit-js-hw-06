@@ -15,6 +15,11 @@ buttonCreate.addEventListener("click", ()=> {
   
   for (let index = 1; index <= input.valueAsNumber; index++) {
     const addElement= document.createElement('div')
+
+   const width = addElement.style.width= "30px";
+   const heigth = addElement.style.height= "30px";
+    addElement.style.border= "1px solid black"
+   
     divBox.append(addElement)
   }
 })
