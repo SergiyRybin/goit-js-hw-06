@@ -12,13 +12,11 @@ const divBox = document.querySelector("#boxes")
 
 
 buttonCreate.addEventListener("click", ()=> {
- input.addEventListener("blur", ()=> {
-    for (let index = 0; index <= input.value; index++) {
-      const addElement= document.createElement('div')
-      divBox.append(addElement)
-    }
-  })
   
+  for (let index = 1; index <= input.valueAsNumber; index++) {
+    const addElement= document.createElement('div')
+    divBox.append(addElement)
+  }
 })
 
 
