@@ -13,8 +13,7 @@ const value = document.querySelector("#value")
 buttonAction.forEach(element => {
     element.addEventListener("click", (event)=>{
         if(event.target.dataset.action === "decrement"){
-            value.innerHTML -= 1
-            
+            value.innerHTML --
         }
         else{value.innerHTML ++ }
     });

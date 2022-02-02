@@ -10,4 +10,7 @@ if (email.value === "" || password.value === "") {
   const data = {};
   data.name = email.value
   data.password = password.value
+  console.log(data)
+  form.reset()
+
 })
