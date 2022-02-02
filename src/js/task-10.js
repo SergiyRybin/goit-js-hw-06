@@ -21,7 +21,6 @@ buttonCreate.addEventListener("click", ()=> {
 divBox.style.display = "flex";
 divBox.style.alignItems = "center";
 divBox.style.flexWrap = "wrap"
-console.log(divBox.style)
 
     addElement.style.border= "2px solid black"
     divBox.append(addElement)
