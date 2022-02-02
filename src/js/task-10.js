@@ -15,13 +15,18 @@ buttonCreate.addEventListener("click", ()=> {
   
   for (let index = 1; index <= input.valueAsNumber; index++) {
     const addElement= document.createElement('div')
-let valueWidth = 30
-   const width = addElement.style.width= valueWidth+"px";
-  console.log(width, valueWidth)   
-   const heigth = addElement.style.height= "30px";
-    addElement.style.border= "1px solid black"
+    addElement.style.width= index*30+"px";
+    addElement.style.height= index*30+"px";
+divBox.style.display = "flex";
+divBox.style.alignItems = "center";
+
+    addElement.style.border= "2px solid black"
     divBox.append(addElement)
   }
+ 
 })
 
-
+buttonDestroy.addEventListener("click", ()=>{
+input.value=""
+divBox.remove()
+})
