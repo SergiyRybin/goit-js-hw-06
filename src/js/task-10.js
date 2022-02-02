@@ -15,9 +15,11 @@ buttonCreate.addEventListener("click", ()=> {
   
   for (let index = 1; index <= input.valueAsNumber; index++) {
     const addElement= document.createElement('div')
-    addElement.style.width= index*30+"px";
-    addElement.style.height= index*30+"px";
+    const value = 20
+    addElement.style.width= value+10*index+"px";
+    addElement.style.height= value+10*index+"px";
     addElement.style.margin = "10px"
+    console.log(input.valueAsNumber[1])
 divBox.style.display = "flex";
 divBox.style.alignItems = "center";
 divBox.style.flexWrap = "wrap"
