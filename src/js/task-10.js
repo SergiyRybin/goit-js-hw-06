@@ -15,11 +15,12 @@ buttonCreate.addEventListener("click", ()=> {
     addElement.style.width= value+10*index+"px";
     addElement.style.height= value+10*index+"px";
     addElement.style.margin = "10px"
+    addElement.style.backgroundColor = getRandomHexColor()
+
 divBox.style.display = "flex";
 divBox.style.alignItems = "center";
 divBox.style.flexWrap = "wrap"
 
-    addElement.style.border= "2px solid black"
     divBox.append(addElement)
     
   }
@@ -28,5 +29,5 @@ divBox.style.flexWrap = "wrap"
 
 buttonDestroy.addEventListener("click", ()=>{
 input.value=""
-divBox.innerHTML=""
+divBox.textContent=""
 })
