@@ -3,5 +3,11 @@ addName.addEventListener("input", onSpan)
 const spanName = document.querySelector("#name-output")
 
 function onSpan(event){
-   spanName.textContent=event.target.value
+   if(addName.value.length === 0){
+      spanName.textContent="Anonymous"
+   }
+   else{
+      spanName.textContent=event.target.value
+   }
 }
+
