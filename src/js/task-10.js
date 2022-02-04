@@ -5,11 +5,7 @@ function getRandomHexColor() {
 const buttonCreate = document.querySelector("[data-create]")
 const buttonDestroy = document.querySelector("[data-destroy]")
 const input = document.querySelector("input")
-
-
 const divBox = document.querySelector("#boxes")
-
-
 
 buttonCreate.addEventListener("click", ()=> {
   
@@ -19,18 +15,18 @@ buttonCreate.addEventListener("click", ()=> {
     addElement.style.width= value+10*index+"px";
     addElement.style.height= value+10*index+"px";
     addElement.style.margin = "10px"
-    console.log(input.valueAsNumber[1])
 divBox.style.display = "flex";
 divBox.style.alignItems = "center";
 divBox.style.flexWrap = "wrap"
 
     addElement.style.border= "2px solid black"
     divBox.append(addElement)
+    
   }
  
 })
 
 buttonDestroy.addEventListener("click", ()=>{
 input.value=""
-divBox.remove()
+divBox.innerHTML=""
 })
